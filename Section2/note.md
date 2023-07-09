@@ -45,3 +45,6 @@ function中的參數是reference，完全不用另外分配記憶體空間給參
 
 # class
 C和C++兩者只有C++有class，class跟structure很像，在C++中這兩者主要的不同是class是預設private，structure是預設public，在C裡，structure是不能放function，但是C++的class和structure都可以
+
+# template
+是C++用來實作generic的方法，可讓function或class支援不同type的參數
