@@ -37,7 +37,7 @@ reference就是一個變數的別名，跟pointer的差別在於pointer會占用
 
 2.Pass by address
 
-呼叫function時傳遞參數的記憶體位址，然後function中的參數是pointer，用來指向傳遞來的記憶體位址，藉以間接存取參數，所以改動function中的formal parameters會影響actual parameters。
+呼叫function時傳遞參數的記憶體位址，然後function中的參數是pointer，用來指向傳遞來的記憶體位址，藉以間接存取參數，所以改動function中的formal parameters會影響actual parameters。在C和C++中要傳遞array只能用Pass by address
 
 3.Pass by reference
 
