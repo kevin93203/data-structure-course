@@ -42,3 +42,6 @@ reference就是一個變數的別名，跟pointer的差別在於pointer會占用
 3.Pass by reference
 
 function中的參數是reference，完全不用另外分配記憶體空間給參數，所以改動function中的formal parameters會影響actual parameters，實現原理其實是compiler會把function的machine code直接複製貼上到呼叫函式的地方(inline function)，這樣執行function時就不會是在另一個stack的section中，也就是說全部都在同個stack section，就可以直接存取參數，但是此種做法會影響效率，因此不建議在複雜的function中使用Pass by reference，不過還是要看compiler的實際的實現方式，也有可能是把reference轉成pointer
+
+# class
+C和C++兩者只有C++有class，class跟structure很像，在C++中這兩者主要的不同是class是預設private，structure是預設public，在C裡，structure是不能放function，但是C++的class和structure都可以
